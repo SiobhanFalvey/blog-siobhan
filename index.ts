@@ -1,3 +1,4 @@
+
 class BlogPost {
     blogTitle: string;
     blogText: string;
@@ -41,6 +42,7 @@ const outputBlogBody = (textarea) => {
 
 }
 
+
 /*/const moveToArchive = (blogPosts) => {
     let oldPost = BlogPost[0];
     archive.push(oldPost);
@@ -48,8 +50,13 @@ const outputBlogBody = (textarea) => {
     document.getElementById('archive').appendChild(textarea);
     blogPosts.shift();
 }/** */
+// }
 
+const hideForm = () => {
+    document.getElementById("hiding-form").style.display = "none";
 }
 
-
+const showForm = () => {
+    document.getElementById("reveal-form").style.display = "!none";
+}
 

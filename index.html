@@ -15,20 +15,22 @@
     <header>
         <h1>Blog Writer</h1>
     </header>
-    <form id="blog-form" onsubmit="createBlogPost(); return false;">
-        <fieldset class="form-header">
-            <input type="text" id="blog-title" placeholder="Blog Title">
-        </fieldset>
-        <fieldset class="form-input">
-            <textarea id="blog-text" rows="10" cols="50"></textarea>
-        </fieldset>
-        <fieldset>
-            <input type="submit" value="Submit">
-        </fieldset>
-    </form>
-    <section id="blog-output">
+    <div id="hiding-form">
+        <form id="blog-form" onsubmit="createBlogPost(); return false;">
+            <fieldset class="form-header">
+                <input type="text" id="blog-title" placeholder="Blog Title">
+            </fieldset>
+            <fieldset class="form-input">
+                <textarea id="blog-text" rows="10" cols="50"></textarea>
+            </fieldset>
+            <fieldset c>
+                <input lass="button" type="submit" value="Submit" onclick="hideForm()">
+            </fieldset>
+        </form>
+    </div>
+    <section id="blog-output"></section>
 
-    </section>
+    <button id="reveal-form" onclick="showForm()">Write More Blogs</button>
 
 </body>
 
