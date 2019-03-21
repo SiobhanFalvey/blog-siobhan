@@ -8,15 +8,15 @@
     <link rel="stylesheet" type="text/css" href="build/main.css">
     <script src="build/index.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Handlee|Old+Standard+TT|Sacramento" rel="stylesheet">
-    <title>Siobhan's Blog</title>
+    <title>Blog Writer</title>
 </head>
 
-<body background="plant-resized.jpg">
+<body background="plant-background-resized.jpg" alt="palm leaf background">
     <header>
         <h1>Blog Writer</h1>
     </header>
     <main>
-        <div id="hiding-form">
+        <div id="form-display">
             <form id="blog-form" onsubmit="createBlogPost(); return false;">
                 <fieldset class="form-header">
                     <input type="text" id="blog-title" placeholder="Blog Title">
@@ -34,7 +34,6 @@
         </div>
         <button id="reveal-form" onclick="showForm()">Add Blogs</button>
     </main>
-
 </body>
 
 </html>

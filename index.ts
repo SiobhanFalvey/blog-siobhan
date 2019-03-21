@@ -55,13 +55,13 @@ const outputBlogBody = (textarea) => {
 // }
 
 const hideForm = () => {
-    document.getElementById("hiding-form").style.display = "none";
+    document.getElementById('form-display').style.display = 'none';
     document.getElementById('loading-blog').style.display = 'block';
 }
 
 const showForm = () => {
-    document.getElementById("hiding-form").style.display = "block";
-    document.getElementById('loading-blog').style.display = 'none';
+    document.getElementById('form-display').style.display = 'block';
+
 }
 
 
