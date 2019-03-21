@@ -39,3 +39,7 @@ const outputBlogBody = (textarea) => {
 
 }
 
+const resetBlog = (title, textarea) => {
+
+}
+
