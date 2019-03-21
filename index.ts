@@ -11,6 +11,7 @@ class BlogPost {
 };
 
 let blogPosts: BlogPost[] = [];
+//let archive = [];
 
 const createBlogPost = () => {
     let form = document.getElementById("blog-form");
@@ -19,11 +20,12 @@ const createBlogPost = () => {
     blogPosts.push(new BlogPost(title, textarea));
     outputBlog(title);
     outputBlogBody(textarea);
+    //moveToArchive(blogPosts);
 }
 
 const outputBlog = (title) => {
     let target = document.getElementById('blog-output');
-    let node = document.createElement("p");
+    let node = document.createElement("h2");
     let textnodetitle = document.createTextNode(title);
     node.appendChild(textnodetitle);
     target.appendChild(node);
@@ -32,14 +34,22 @@ const outputBlog = (title) => {
 
 const outputBlogBody = (textarea) => {
     let target = document.getElementById('blog-output');
-    let node = document.createElement("blogbody");
+    let node = document.createElement("p");
     let textnodepost = document.createTextNode(textarea);
     node.appendChild(textnodepost);
     target.appendChild(node);
 
 }
 
-const resetBlog = (title, textarea) => {
+/*/const moveToArchive = (blogPosts) => {
+    let oldPost = BlogPost[0];
+    archive.push(oldPost);
+    document.getElementById('archive').appendChild(title);
+    document.getElementById('archive').appendChild(textarea);
+    blogPosts.shift();
+}/** */
 
 }
+
+
 

@@ -5,3 +5,36 @@ body {
 fieldset {
     border: none;
 }
+
+header {
+    color: white;
+    font-size: 30pt;
+    font-family: 'Sacramento', cursive;
+}
+
+
+form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#blog-output {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    //height: 100px;
+    background-color: white;
+    opacity: 0.5;;
+
+}
+
+// .output {
+
+//     border: solid 2px white;
+//     // height: 600px;
+//     display: flex;
+//     flex-direction: column;
+//     // justify-content: space-around;
+// }
