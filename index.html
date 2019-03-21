@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="build/main.css">
     <script src="build/index.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT|Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Handlee|Old+Standard+TT|Sacramento" rel="stylesheet">
     <title>Siobhan's Blog</title>
 </head>
 
@@ -15,22 +15,25 @@
     <header>
         <h1>Blog Writer</h1>
     </header>
-    <div id="hiding-form">
-        <form id="blog-form" onsubmit="createBlogPost(); return false;">
-            <fieldset class="form-header">
-                <input type="text" id="blog-title" placeholder="Blog Title">
-            </fieldset>
-            <fieldset class="form-input">
-                <textarea id="blog-text" rows="10" cols="50"></textarea>
-            </fieldset>
-            <fieldset c>
-                <input lass="button" type="submit" value="Submit" onclick="hideForm()">
-            </fieldset>
-        </form>
-    </div>
-    <section id="blog-output"></section>
-
-    <button id="reveal-form" onclick="showForm()">Write More Blogs</button>
+    <main>
+        <div id="hiding-form">
+            <form id="blog-form" onsubmit="createBlogPost(); return false;">
+                <fieldset class="form-header">
+                    <input type="text" id="blog-title" placeholder="Blog Title">
+                </fieldset>
+                <fieldset class="form-input">
+                    <textarea id="blog-text" rows="10" cols="50"></textarea>
+                </fieldset>
+                <fieldset c>
+                    <input lass="button" type="submit" value="Submit" onclick="hideForm()">
+                </fieldset>
+            </form>
+        </div>
+        <div id="loading-blog">
+            <section id="blog-output" onload="hideBlog()"></section>
+        </div>
+        <button id="reveal-form" onclick="showForm()">Add Blogs</button>
+    </main>
 
 </body>
 

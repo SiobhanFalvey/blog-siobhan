@@ -14,6 +14,8 @@ class BlogPost {
 let blogPosts: BlogPost[] = [];
 //let archive = [];
 
+
+
 const createBlogPost = () => {
     let form = document.getElementById("blog-form");
     let title = form["blog-title"].value;
@@ -54,9 +56,13 @@ const outputBlogBody = (textarea) => {
 
 const hideForm = () => {
     document.getElementById("hiding-form").style.display = "none";
+    document.getElementById('loading-blog').style.display = 'block';
 }
 
 const showForm = () => {
-    document.getElementById("reveal-form").style.display = "!none";
+    document.getElementById("hiding-form").style.display = "block";
+    document.getElementById('loading-blog').style.display = 'none';
 }
+
+
 
