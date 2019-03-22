@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="build/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="build/main.css" />
     <script src="build/index.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Handlee|Old+Standard+TT|Sacramento" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Handlee|Old+Standard+TT|Sacramento"
+      rel="stylesheet"
+    />
     <title>Blog Writer</title>
-</head>
+  </head>
 
-<body background="plant-background-resized.jpg" alt="palm leaf background">
+  <body background="plant-background-resized.jpg" alt="palm leaf background">
     <header>
-        <h1>Blog Writer</h1>
+      <h1>Blog Writer</h1>
     </header>
     <main>
-        <div id="form-display">
-            <form id="blog-form" onsubmit="createBlogPost(); return false;">
-                <fieldset class="form-header">
-                    <input type="text" id="blog-title" placeholder="Blog Title">
-                </fieldset>
-                <fieldset class="form-input">
-                    <textarea id="blog-text" rows="10" cols="50"></textarea>
-                </fieldset>
-                <fieldset c>
-                    <input lass="button" type="submit" value="Submit" onclick="hideForm()">
-                </fieldset>
-            </form>
-        </div>
-        <div id="loading-blog">
-            <section id="blog-output" onload="hideBlog()"></section>
-        </div>
-        <button id="reveal-form" onclick="showForm()">Add Blogs</button>
+      <div id="form-display">
+        <form id="blog-form" onsubmit="createBlogPost(); return false;">
+          <fieldset class="form-header">
+            <input type="text" id="blog-title" placeholder="Blog Title" />
+          </fieldset>
+          <fieldset class="form-input">
+            <textarea id="blog-text" rows="10" cols="50"></textarea>
+          </fieldset>
+          <fieldset>
+            <input
+              lass="button"
+              type="submit"
+              value="Submit"
+              onclick="hideForm()"
+            />
+          </fieldset>
+        </form>
+      </div>
+      <div id="loading-blog">
+        <section id="blog-output" onload="hideBlog()"></section>
+      </div>
+      <button id="reveal-form" onclick="showForm()">Add Blogs</button>
     </main>
-</body>
-
+  </body>
 </html>

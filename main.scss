@@ -1,48 +1,43 @@
-
-main { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Handlee', cursive;
-
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Handlee", cursive;
 }
 
 header {
-    color: white;
-    font-size: 30pt;
-    font-family: 'Sacramento', cursive;
+  color: white;
+  font-size: 30pt;
+  font-family: "Sacramento", cursive;
 }
-
 
 form {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Sacramento', cursive;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Sacramento", cursive;
 }
 fieldset {
-    border: none;
+  border: none;
 }
 
 button {
   padding: 5px;
   border-radius: 8px;
   width: 100px;
-  font-size: 10pt; 
-  margin-top :50px;
+  font-size: 10pt;
+  margin-top: 50px;
 }
 
 #blog-output {
-    background-color: white;
-    opacity: 0.8;
-    margin: 50px;
-    width: 900px;
-    border-radius: 8px;
-    padding: 20px;
-
+  background-color: white;
+  opacity: 0.8;
+  margin: 50px;
+  width: 900px;
+  border-radius: 8px;
+  padding: 20px;
 }
 
 #loading-blog {
-    display:none;
+  display: none;
 }
